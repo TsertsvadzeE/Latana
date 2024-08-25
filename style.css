@@ -372,6 +372,15 @@ header nav {
   gap: 80px 24px;
 }
 
+.product-card {
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
 #products .product-card,
 #mostPopular .product-card {
   display: flex;
