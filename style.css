@@ -69,6 +69,10 @@ header nav {
   color: #161616;
 }
 
+.navbar__menu ul li a:hover {
+  color: #c3bfbf;
+}
+
 .menu-active {
   position: relative;
   display: flex;
@@ -137,6 +141,7 @@ header nav {
 .overlay {
   display: none;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
