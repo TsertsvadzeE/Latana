@@ -32,10 +32,7 @@ function displayProducts(products, parent) {
     }"> <div class="card-content">
     <h2>${product.title}</h2>
     <p>${product.description.substring(0, 150)}...</p>
-    <div class="price">
-    <div>${product.price}$</div>
-    <div class="old">${product.oldPrice}$</div>
-    </div>
+    <div class="price">${product.price}$</div>
     </div>
     `;
     parent.appendChild(productCard);
@@ -195,7 +192,7 @@ search.addEventListener("input", filterProducts);
 
 //Most Popular Section
 function mostPopularProducts() {
-  const popullarProducts = allProducts.filter((product) => product.price < 300);
+  const popullarProducts = allProducts.filter((product) => product.price < 50);
   displayProducts(popullarProducts, mostPopular);
 
   if (!popularSection.querySelector("span")) {
